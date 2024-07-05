@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-07-05T01:22:09.971Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0" etag="l9E1ypJbv8Cs50FOcYby" version="24.6.4" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="819" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-0" value="&lt;b&gt;IDao&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="100" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-1" value="+ GetTasks(): List&amp;lt;Task&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NlmSXj15ajXOF9AE6fdE-0">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-2" value="&lt;div&gt;+ InsertTasks(List&amp;lt;Task&amp;gt;): string&lt;/div&gt;&lt;div&gt;+ ImportData(string path): string&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NlmSXj15ajXOF9AE6fdE-0">
+          <mxGeometry y="52" width="200" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-7" value="IService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="240" y="100" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-8" value="&lt;div&gt;+ createTask(TaskDTO): string&lt;/div&gt;&lt;div&gt;+ completeTask(int id): string&lt;/div&gt;&lt;div&gt;+ alterTask(TaskDTO): string&lt;/div&gt;&lt;div&gt;+ importData(string path): string&lt;br&gt;&lt;/div&gt;&lt;div&gt;- impulseTask(List&amp;lt;Task&amp;gt; doneTasks): int (nro de tarefas concluidas)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NlmSXj15ajXOF9AE6fdE-7">
+          <mxGeometry y="26" width="260" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-12" value="IController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry y="270" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-13" value="&lt;div&gt;+ createTask(TaskDTO): void&lt;/div&gt;&lt;div&gt;+ completeTask(int id): void&lt;/div&gt;&lt;div&gt;+ alterTask(TaskDTO): void&lt;/div&gt;&lt;div&gt;+ importData(string path): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ showList(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NlmSXj15ajXOF9AE6fdE-12">
+          <mxGeometry y="26" width="260" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-14" value="IView" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="284" y="270" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NlmSXj15ajXOF9AE6fdE-15" value="&lt;div&gt;+ createTask(): TaskDTO&lt;/div&gt;&lt;div&gt;+ completeTask(): int &lt;br&gt;&lt;/div&gt;&lt;div&gt;+ alterTask(): TaskDTO&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ importData(): File&lt;/div&gt;&lt;div&gt;+ showMessage(string content): void&lt;/div&gt;&lt;div&gt;+ showList(List&amp;lt;TaskDTO): void&lt;/div&gt;&lt;div&gt;* usar o chooseFile&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="NlmSXj15ajXOF9AE6fdE-14">
+          <mxGeometry y="26" width="260" height="114" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
